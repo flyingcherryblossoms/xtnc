@@ -1,0 +1,64 @@
+
+.nav1 {
+    margin: 20px 8px 0 0;
+    font-size: 13px;
+}
+.nav1:hover {
+    color: #008000;
+}
+
+.search-input {
+    min-width: 300px;
+}
+
+@media screen and (max-width: 1263px ) {
+    .search-input {
+        min-width: 0;
+    }
+}
+
+.nav-item:hover {
+    background-color: #f2f7ea;
+}
+
+.nav-link {
+    min-width: 120px;
+    text-align: center;
+}
+
+.active {
+    background-color: #f2f7ea;
+}
+
+.bg {
+    background: url("../img/background.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.margin-u-d {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.btn-indigo {
+    background-color: #1db643;
+}
+
+.rotate-left {
+    transform: rotate(-10deg);
+}
+
+.rotate-right {
+    transform: rotate(10deg);
+}
+
+.shadows {
+    box-shadow: -3px 3px 3px 3px gray;
+}
+
+.img-1 {
+    width: 1250px;
+    height: 680px;
+    object-fit: cover;
+}
+
