@@ -30,9 +30,9 @@
     background-color: #f2f7ea;
 }
 
-.bg {
-    background: url("../img/background.jpg") no-repeat center;
-    background-size: contain;
+.bg1 {
+    background: url("../img/种界新星.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 
 .margin-u-d {
@@ -61,4 +61,3 @@
     height: 680px;
     object-fit: cover;
 }
-
