@@ -17,8 +17,8 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/tabs.css" />
     <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
-    <script src="js/modernizr.custom.js"></script>
 
+    <script src="js/modernizr.custom.js"></script>
     <script src="jquery/jquery-3.5.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
 </head>
@@ -29,11 +29,11 @@
     <div class="container-fluid">
         <!--row1 start-->
         <div class="row">
-            <div class="col-md-2"><!--占位--></div>
-            <div class="col-md-7">
+            <div class="col-md-1"><!--占位--></div>
+            <div class="col-md-6 col-lg-7">
                 <p><small class="float-left">欢迎来到心田农场!</small></p>
             </div>
-            <div class="col-md-2 d-flex align-content-md-center">
+            <div class="col-md-3 col-lg-3 d-flex align-content-md-center justify-content-end">
                 <nav>
                     <ul class="list-unstyled row">
                         <li><a href="#" class="nav1 text-decoration-none">加入我们</a></li>
@@ -47,29 +47,19 @@
 
         <!--row2 start-->
         <div class="row">
-            <div class="col-md-2"><!--占位--></div>
-            <div class="col-md-6 logo d-inline">
+            <div class="col-lg-1"><!--占位--></div>
+            <div class="col-lg-4 logo d-inline">
                 <div class="m-auto">
                     <img src="img/心田农场.png" alt="logo" class="img-fluid" style=" max-width: 300px">
                 </div>
-            </div>
-
-            <div class="col-md-4 align-self-end" style="margin-bottom: 5px;">
-                <form class="form-inline my-2 my-lg-0 d-flex">
-                    <div>
-                        <input class="form-control mr-sm-2 rounded-pill search-input" type="search" placeholder="Search"
-                               aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Search</button>
-                    </div>
-                </form>
             </div>
         </div>
         <!--row2 end-->
 
         <!--row3 start-->
         <div class="row" id="mid-nav">
-            <div class="col-md-2 bg-light"><!--占位--></div>
-            <nav class="col-md-10 navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-lg-1 bg-light"><!--占位--></div>
+            <nav class="col-lg-11 navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">导航</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -78,208 +68,239 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-success" href="index.html">首页<span class="sr-only">(current)</span></a>
+                    <ul class="nav navbar-nav mr-auto nav-tabs mid-nav-ul" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home" data-toggle="pill" role="tab" aria-controls="home" aria-selected="true">首页<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="zzxs.html">种子选手</a>
+                            <a class="nav-link" href="#zzxs" data-toggle="pill" role="tab" aria-controls="zzxs" aria-selected="false">种子选手</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="fszw.html">丰收在望</a>
+                            <a class="nav-link" href="#fszw" data-toggle="pill" role="tab"  aria-controls="fszw" aria-selected="false">丰收在望</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="zjxx.html">种界新星</a>
+                            <a class="nav-link" href="#zjxx" data-toggle="pill" role="tab"  aria-controls="zjxx" aria-selected="false">种界新星</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="gytj.html">归园田居</a>
+                            <a class="nav-link" href="#gytj" data-toggle="pill" role="tab"  aria-controls="gytj" aria-selected="false">归园田居</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ppyx.html">品牌优选</a>
+                            <a class="nav-link" href="#ppyx" data-toggle="pill" role="tab"  aria-controls="ppyx" aria-selected="false">品牌优选</a>
                         </li>
                     </ul>
+
+                    <div class="align-self-end" style="margin-bottom: 5px;">
+                        <form class="form-inline my-2 my-lg-0 d-flex">
+                            <div class="d-inline">
+                                <input class="form-control mr-sm-2 rounded-pill search-input" type="search" placeholder="Search"
+                                       aria-label="Search" style="height: 25px">
+                                <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit" style="height: 35px">Search</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
+
             </nav>
         </div>
         <!--row3 end-->
-
     </div>
+
 </header>
 <!--head end-->
 
-<main class="container">
-    <div style="height: 50px"></div>
-    <div class="row">
-        <div class="col-md-6">
-            <img src="img/心田农场2.jpg" alt="心田农场" class="img-fluid">
-        </div>
-        <div class="col-md-6">
-            <section>
-                <div class="tabs tabs-style-line">
-                    <nav>
-                        <ul>
-                            <li><a href="#section-line-1"><span>综合</span></a></li>
-                            <li><a href="#section-line-2"><span>活动</span></a></li>
-                            <li><a href="#section-line-3"><span>公告</span></a></li>
-                        </ul>
-                    </nav>
-                    <div class="content-wrap">
-                        <section id="section-line-1">
-                            <ul class="list-unstyled">
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">1</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【公告】《心田农场》5月20上线公告 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">2</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【活动】全国大学生“向往的生活”设计大赛</a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">3</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【活动】中秋节节日大促销 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">4</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 《心田农场》反馈专区等你来 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section id="section-line-2">
-                            <ul class="list-unstyled">
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">1</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【活动】全国大学生“向往的生活”设计大赛 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">2</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【活动】中秋节节日大促销</a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">3</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【活动】“种界新星”使用指南 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">4</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【活动】“成长纪念册”评选 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section id="section-line-3">
-                            <ul class="list-unstyled">
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">1</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【公告】《心田农场》5月24上线公告 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">2</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【公告】会员注册指引</a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">3</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【公告】《心田农场》反馈专区等你来 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                                <hr>
-                                <li class="row align-items-center">
-                                    <div class="col-md-1"><span class="badge badge-secondary">4</span></div>
-                                    <div class="col-md-10">
-                                        <a href="#"> 【公告】《心田农场》售后问卷调查 </a>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <main class="container">
+            <div style="height: 50px"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/心田农场2.jpg" alt="心田农场" class="img-fluid">
                 </div>
-            </section>
-        </div>
+                <div class="col-md-6">
+                    <section>
+                        <div class="tabs tabs-style-line">
+                            <nav>
+                                <ul>
+                                    <li><a href="#section-line-1"><span>综合</span></a></li>
+                                    <li><a href="#section-line-2"><span>活动</span></a></li>
+                                    <li><a href="#section-line-3"><span>公告</span></a></li>
+                                </ul>
+                            </nav>
+                            <div class="content-wrap">
+                                <section id="section-line-1">
+                                    <ul class="list-unstyled">
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">1</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【公告】《心田农场》5月20上线公告 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">2</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【活动】全国大学生“向往的生活”设计大赛</a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">3</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【活动】中秋节节日大促销 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">4</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 《心田农场》反馈专区等你来 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section id="section-line-2">
+                                    <ul class="list-unstyled">
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">1</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【活动】全国大学生“向往的生活”设计大赛 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">2</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【活动】中秋节节日大促销</a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">3</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【活动】“种界新星”使用指南 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">4</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【活动】“成长纪念册”评选 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section id="section-line-3">
+                                    <ul class="list-unstyled">
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">1</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【公告】《心田农场》5月24上线公告 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">2</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【公告】会员注册指引</a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">3</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【公告】《心田农场》反馈专区等你来 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                        <hr>
+                                        <li class="row align-items-center">
+                                            <div class="col-md-1"><span class="badge badge-secondary">4</span></div>
+                                            <div class="col-md-10">
+                                                <a href="#"> 【公告】《心田农场》售后问卷调查 </a>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div style="height: 30px"></div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure">
+                        <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
+            </div>
+
+        </main>
     </div>
-
-    <div style="height: 30px"></div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <figure class="figure">
-                <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
-            </figure>
-        </div>
-        <div class="col-md-4">
-            <figure class="figure">
-                <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
-            </figure>
-        </div>
-        <div class="col-md-4">
-            <figure class="figure">
-                <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
-            </figure>
-        </div>
+    <div class="tab-pane fade" id="zzxs" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="container-fluid bg1" style="height: 450px;"></div>
     </div>
-
-</main>
+    <div class="tab-pane fade" id="fszw" role="tabpanel" aria-labelledby="pills-contact-tab">
+        fszw
+    </div>
+    <div class="tab-pane fade" id="zjxx" role="tabpanel" aria-labelledby="pills-contact-tab">
+        zjxx
+    </div>
+    <div class="tab-pane fade" id="gytj" role="tabpanel" aria-labelledby="pills-contact-tab">
+        gytj
+    </div>
+    <div class="tab-pane fade" id="ppyx" role="tabpanel" aria-labelledby="pills-contact-tab">
+        ppyx
+    </div>
+</div>
 
 <!--footer start-->
 <footer>
@@ -469,6 +490,12 @@
             }
         });
     });
+
+    var activeNavitem = document.getElementsByClassName("nav-link active");
+    console.log(activeNavitem);
+
+
+
 </script>
 </body>
 

@@ -7,15 +7,6 @@
     color: #008000;
 }
 
-.search-input {
-    min-width: 300px;
-}
-
-@media screen and (max-width: 1263px ) {
-    .search-input {
-        min-width: 0;
-    }
-}
 
 .nav-item:hover {
     background-color: #f2f7ea;
@@ -27,7 +18,8 @@
 }
 
 .active {
-    background-color: #f2f7ea;
+    background-color: #f2f7ea !important;
+    color: #28a745 !important;
 }
 
 .bg1 {
@@ -35,29 +27,10 @@
     background-size: cover;
 }
 
-.margin-u-d {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+@media (max-width: 1215px) {
 
-.btn-indigo {
-    background-color: #1db643;
-}
-
-.rotate-left {
-    transform: rotate(-10deg);
-}
-
-.rotate-right {
-    transform: rotate(10deg);
-}
-
-.shadows {
-    box-shadow: -3px 3px 3px 3px gray;
-}
-
-.img-1 {
-    width: 1250px;
-    height: 680px;
-    object-fit: cover;
+    .nav-link {
+        min-width: 0;
+        text-align: center;
+    }
 }
