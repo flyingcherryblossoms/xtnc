@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 .nav1 {
     margin: 20px 8px 0 0;
@@ -17,14 +20,39 @@
     text-align: center;
 }
 
-.active {
+.nav-item .active {
     background-color: #f2f7ea !important;
     color: #28a745 !important;
 }
 
 .bg1 {
-    background: url("../img/种界新星.jpg") no-repeat center fixed;
+    background: url("../img/种界新星_banner.jpg") no-repeat center;
     background-size: cover;
+    height: 450px;
+}
+
+.bg2 {
+    background: url("../img/种界新星_banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.bg3 {
+    background: url("../img/种界新星_banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.bg4 {
+    background: url("../img/归园田居_banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.bg5 {
+    background: url("../img/品牌优选_banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 400px;
 }
 
 @media (max-width: 1215px) {
@@ -34,3 +62,47 @@
         text-align: center;
     }
 }
+
+.Opacity {
+    opacity: 90%;
+}
+
+.shopping_cart {
+    background-color: #80B500;
+    color:white;
+    font-weight: bold;
+}
+
+.shopping_cart:hover {
+    background-color: #45b500;
+    color:white;
+}
+
+.hover_shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.pdt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pdt:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.pdt li:first-child {
+    height: 100%;
+    float: left;
+}
+
+.pdt_price {
+    color: #f56b0f;
+    font-size: 1.3em;
+}
+
+.add-cart a:hover {
+    background-color: #45b500; !important;
+}
+
+

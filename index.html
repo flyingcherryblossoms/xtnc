@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tabs.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tabstyles.css"/>
 
     <script src="js/modernizr.custom.js"></script>
     <script src="jquery/jquery-3.5.1.min.js"></script>
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<!--head start-->
+<!--header start-->
 <header class="border-bottom bg-light">
     <div class="container-fluid">
         <!--row1 start-->
@@ -70,31 +70,39 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav mr-auto nav-tabs mid-nav-ul" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home" data-toggle="pill" role="tab" aria-controls="home" aria-selected="true">首页<span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#home" data-toggle="pill" role="tab" aria-controls="home"
+                               aria-selected="true">首页<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#zzxs" data-toggle="pill" role="tab" aria-controls="zzxs" aria-selected="false">种子选手</a>
+                            <a class="nav-link" href="#zzxs" data-toggle="pill" role="tab" aria-controls="zzxs"
+                               aria-selected="false">种子选手</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#fszw" data-toggle="pill" role="tab"  aria-controls="fszw" aria-selected="false">丰收在望</a>
+                            <a class="nav-link" href="#fszw" data-toggle="pill" role="tab" aria-controls="fszw"
+                               aria-selected="false">丰收在望</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#zjxx" data-toggle="pill" role="tab"  aria-controls="zjxx" aria-selected="false">种界新星</a>
+                            <a class="nav-link" href="#zjxx" data-toggle="pill" role="tab" aria-controls="zjxx"
+                               aria-selected="false">种界新星</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#gytj" data-toggle="pill" role="tab"  aria-controls="gytj" aria-selected="false">归园田居</a>
+                            <a class="nav-link" href="#gytj" data-toggle="pill" role="tab" aria-controls="gytj"
+                               aria-selected="false">归园田居</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#ppyx" data-toggle="pill" role="tab"  aria-controls="ppyx" aria-selected="false">品牌优选</a>
+                            <a class="nav-link" href="#ppyx" data-toggle="pill" role="tab" aria-controls="ppyx"
+                               aria-selected="false">品牌优选</a>
                         </li>
                     </ul>
 
                     <div class="align-self-end" style="margin-bottom: 5px;">
                         <form class="form-inline my-2 my-lg-0 d-flex">
                             <div class="d-inline">
-                                <input class="form-control mr-sm-2 rounded-pill search-input" type="search" placeholder="Search"
-                                       aria-label="Search" style="height: 25px">
-                                <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit" style="height: 35px">Search</button>
+                                <input class="form-control mr-sm-2 rounded-pill search-input" type="search"
+                                       placeholder="Search" aria-label="Search" style="height: 25px">
+                                <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit"
+                                        style="height: 35px">搜索
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -107,9 +115,10 @@
     </div>
 
 </header>
-<!--head end-->
+<!--header end-->
 
-<div class="tab-content" id="pills-tabContent">
+<div class="tab-content">
+    <!--首页-->
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
         <main class="container">
             <div style="height: 50px"></div>
@@ -285,20 +294,188 @@
 
         </main>
     </div>
+
+    <!--种子选手-->
     <div class="tab-pane fade" id="zzxs" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div class="container-fluid bg1" style="height: 450px;"></div>
+        <!--banner-->
+        <div class="container-fluid bg1"></div>
+        <!--navbar start-->
+        <div class="container-fluid bg-light">
+            <div class="row">
+                <div class="col-md-5 offset-md-2">
+                    <div class="align-self-end" style="margin-bottom: 5px;margin-top: 5px;">
+                        <form class="form-inline my-2 my-lg-0 d-flex">
+                            <div class="d-inline mr-md-2">
+                                <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search"
+                                       aria-label="Search" style="height: 20px">
+                                <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+                            </div>
+                            <div>
+                                <select class="form-control form-control-sm">
+                                    <option>默认升序</option>
+                                    <option>默认降序</option>
+                                    <option>价格升序</option>
+                                    <option>价格降序</option>
+                                    <option>季节蔬菜</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-5 row justify-content-end">
+                    <a class="btn shopping_cart align-self-center" href="#">
+                        <i class="fa fa-shopping-cart mr-1" aria-hidden="true"></i>
+                        &nbsp;购物车
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--商品陈列-->
+        <div class="container">
+            <div style="min-height: 20px;"></div>
+            <div class="row">
+                <ul class="pdt list-unstyled">
+                    <li class="pdt-item">
+                        <a href="#" class="pdt_img" alt="菠菜300g"><img alt="菠菜300g" src="https://crmcdn.tonysfarm.com/Framework/Upload/Image/20161201/1A7F04F8ACA6454CBDA470B917CE4203.jpg?x-oss-process=style/w320"></a>
+                        <div class="bg-white">
+                            <span class="pdt_title">
+                                <a href="#" class="ml-3">菠菜300g</a>
+                            </span>
+                            <div style="min-height: 10px;"></div>
+                            <div class="row">
+                                <span class="pdt_price col-md-8 ml-3"><i class="fa fa-rmb" aria-hidden="true"></i>17.8</span>
+                                <div class="add-cart col-md-2">
+                                    <a href="#" class="btn rounded-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div style="min-height: 20px;"></div>
+                        </div>
+                    </li>
+
+                    <li class="pdt-item">
+                        <a href="#" class="pdt_img" alt="菠菜300g"><img alt="菠菜300g" src="https://crmcdn.tonysfarm.com/Framework/Upload/Image/20161201/1A7F04F8ACA6454CBDA470B917CE4203.jpg?x-oss-process=style/w320"></a>
+                        <div class="bg-white">
+                            <span class="pdt_title">
+                                <a href="#" class="ml-3">菠菜300g</a>
+                            </span>
+                            <div style="min-height: 10px;"></div>
+                            <div class="row">
+                                <span class="pdt_price col-md-8 ml-3"><i class="fa fa-rmb" aria-hidden="true"></i>17.8</span>
+                                <div class="add-cart col-md-2">
+                                    <a href="#" class="btn rounded-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div style="min-height: 20px;"></div>
+                        </div>
+                    </li>
+                    <li class="pdt-item">
+                        <a href="#" class="pdt_img" alt="菠菜300g"><img alt="菠菜300g" src="https://crmcdn.tonysfarm.com/Framework/Upload/Image/20161201/1A7F04F8ACA6454CBDA470B917CE4203.jpg?x-oss-process=style/w320"></a>
+                        <div class="bg-white">
+                            <span class="pdt_title">
+                                <a href="#" class="ml-3">菠菜300g</a>
+                            </span>
+                            <div style="min-height: 10px;"></div>
+                            <div class="row">
+                                <span class="pdt_price col-md-8 ml-3"><i class="fa fa-rmb" aria-hidden="true"></i>17.8</span>
+                                <div class="add-cart col-md-2">
+                                    <a href="#" class="btn rounded-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div style="min-height: 20px;"></div>
+                        </div>
+                    </li>
+                    <li class="pdt-item">
+                        <a href="#" class="pdt_img" alt="菠菜300g"><img alt="菠菜300g" src="https://crmcdn.tonysfarm.com/Framework/Upload/Image/20161201/1A7F04F8ACA6454CBDA470B917CE4203.jpg?x-oss-process=style/w320"></a>
+                        <div class="bg-white">
+                            <span class="pdt_title">
+                                <a href="#" class="ml-3">菠菜300g</a>
+                            </span>
+                            <div style="min-height: 10px;"></div>
+                            <div class="row">
+                                <span class="pdt_price col-md-8 ml-3"><i class="fa fa-rmb" aria-hidden="true"></i>17.8</span>
+                                <div class="add-cart col-md-2">
+                                    <a href="#" class="btn rounded-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div style="min-height: 20px;"></div>
+                        </div>
+                    </li>
+                    <li class="pdt-item">
+                        <a href="#" class="pdt_img" alt="菠菜300g"><img alt="菠菜300g" src="https://crmcdn.tonysfarm.com/Framework/Upload/Image/20161201/1A7F04F8ACA6454CBDA470B917CE4203.jpg?x-oss-process=style/w320"></a>
+                        <div class="bg-white">
+                            <span class="pdt_title">
+                                <a href="#" class="ml-3">菠菜300g</a>
+                            </span>
+                            <div style="min-height: 10px;"></div>
+                            <div class="row">
+                                <span class="pdt_price col-md-8 ml-3"><i class="fa fa-rmb" aria-hidden="true"></i>17.8</span>
+                                <div class="add-cart col-md-2">
+                                    <a href="#" class="btn rounded-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div style="min-height: 20px;"></div>
+                        </div>
+                    </li>
+                    <li class="pdt-item">
+                        <a href="#" class="pdt_img" alt="菠菜300g"><img alt="菠菜300g" src="https://crmcdn.tonysfarm.com/Framework/Upload/Image/20161201/1A7F04F8ACA6454CBDA470B917CE4203.jpg?x-oss-process=style/w320"></a>
+                        <div class="bg-white">
+                            <span class="pdt_title">
+                                <a href="#" class="ml-3">菠菜300g</a>
+                            </span>
+                            <div style="min-height: 10px;"></div>
+                            <div class="row">
+                                <span class="pdt_price col-md-8 ml-3"><i class="fa fa-rmb" aria-hidden="true"></i>17.8</span>
+                                <div class="add-cart col-md-2">
+                                    <a href="#" class="btn rounded-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div style="min-height: 20px;"></div>
+                        </div>
+                    </li>
+                    <li class="pdt-item">
+                        <a href="#" class="pdt_img" alt="菠菜300g"><img alt="菠菜300g" src="https://crmcdn.tonysfarm.com/Framework/Upload/Image/20161201/1A7F04F8ACA6454CBDA470B917CE4203.jpg?x-oss-process=style/w320"></a>
+                        <div class="bg-white">
+                            <span class="pdt_title">
+                                <a href="#" class="ml-3">菠菜300g</a>
+                            </span>
+                            <div style="min-height: 10px;"></div>
+                            <div class="row">
+                                <span class="pdt_price col-md-8 ml-3"><i class="fa fa-rmb" aria-hidden="true"></i>17.8</span>
+                                <div class="add-cart col-md-2">
+                                    <a href="#" class="btn rounded-pill"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div style="min-height: 20px;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <!--丰收在望-->
     <div class="tab-pane fade" id="fszw" role="tabpanel" aria-labelledby="pills-contact-tab">
-        fszw
+        <!--banner-->
+        <div class="container-fluid bg2"></div>
     </div>
+
+    <!--种界新星-->
     <div class="tab-pane fade" id="zjxx" role="tabpanel" aria-labelledby="pills-contact-tab">
-        zjxx
+        <!--banner-->
+        <div class="container-fluid bg3"></div>
     </div>
+
+    <!--归园田居-->
     <div class="tab-pane fade" id="gytj" role="tabpanel" aria-labelledby="pills-contact-tab">
-        gytj
+        <!--banner-->
+        <div class="container-fluid bg4"></div>
     </div>
+
+    <!--品牌优选-->
     <div class="tab-pane fade" id="ppyx" role="tabpanel" aria-labelledby="pills-contact-tab">
-        ppyx
+        <!--banner-->
+        <div class="container-fluid bg5"></div>
     </div>
 </div>
 
@@ -340,14 +517,6 @@
         <div class="row mt-3">
 
             <!--First column-->
-<!--            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">-->
-<!--                <h6 class="text-uppercase font-weight-bold">-->
-<!--                    <strong>心田农场</strong>-->
-<!--                </h6>-->
-<!--                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
-<!--                <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit-->
-<!--                    amet, consectetur adipisicing elit.</p>-->
-<!--            </div>-->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase font-weight-bold">
                     <strong>明星项目</strong>
@@ -468,34 +637,29 @@
 
 <script src="js/cbpFWTabs.js"></script>
 <script>
-    (function() {
+    (function () {
 
-        [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-            new CBPFWTabs( el );
+        [].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
+            new CBPFWTabs(el);
         });
 
     })();
-    $(function(){
+    //将顶部导航固定
+    $(function () {
         //获取要定位元素距离浏览器顶部的距离
         var navH = $("#mid-nav").offset().top;
         //滚动条事件
-        $(window).scroll(function(){
+        $(window).scroll(function () {
             //获取滚动条的滑动距离
             var scroH = $(this).scrollTop();
             //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
-            if(scroH>=navH){
-                $("#mid-nav").addClass("fixed-top");
-            }else if(scroH<navH){
-                $("#mid-nav").removeClass("fixed-top");
+            if (scroH >= navH) {
+                $("#mid-nav").addClass("fixed-top Opacity");
+            } else if (scroH < navH) {
+                $("#mid-nav").removeClass("fixed-top Opacity");
             }
         });
     });
-
-    var activeNavitem = document.getElementsByClassName("nav-link active");
-    console.log(activeNavitem);
-
-
-
 </script>
 </body>
 
