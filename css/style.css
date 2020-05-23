@@ -26,33 +26,33 @@
 }
 
 .bg1 {
-    background: url("../img/种界新星_banner.jpg") no-repeat center;
+    background: url("../img/种子选手_banner.jpg") no-repeat center;
     background-size: cover;
-    height: 450px;
+    height: 500px;
 }
 
 .bg2 {
-    background: url("../img/种界新星_banner.jpg") no-repeat center;
+    background: url("../img/丰收在望.jpg") no-repeat center;
     background-size: cover;
-    height: 450px;
+    height: 500px;
 }
 
 .bg3 {
     background: url("../img/种界新星_banner.jpg") no-repeat center;
     background-size: cover;
-    height: 450px;
+    height: 500px;
 }
 
 .bg4 {
     background: url("../img/归园田居_banner.jpg") no-repeat center;
     background-size: cover;
-    height: 450px;
+    height: 500px;
 }
 
 .bg5 {
     background: url("../img/品牌优选_banner.jpg") no-repeat center;
     background-size: cover;
-    height: 400px;
+    height: 500px;
 }
 
 @media (max-width: 1215px) {
@@ -87,22 +87,36 @@
     flex-wrap: wrap;
 }
 
-.pdt:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+ul.pdt li {
+    max-width: 15em;
 }
 
-.pdt li:first-child {
-    height: 100%;
-    float: left;
+.pdt-item{
+    border-radius: 5px;
+}
+
+.pdt-item:hover {
+    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.15) !important;
+    z-index: 99;
+}
+
+.pdt_img img {
+    width: 100%;
+    height: auto;
 }
 
 .pdt_price {
     color: #f56b0f;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .add-cart a:hover {
     background-color: #45b500; !important;
 }
+
+.pdt_title a {
+    font-size: 1.1em;
+}
+
 
 
