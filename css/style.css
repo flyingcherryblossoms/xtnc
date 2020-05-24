@@ -55,6 +55,13 @@
     height: 500px;
 }
 
+.bg6 {
+    background: url("../img/home_banner_about.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+
+
 @media (max-width: 1215px) {
 
     .nav-link {
@@ -76,10 +83,6 @@
 .shopping_cart:hover {
     background-color: #45b500;
     color:white;
-}
-
-.hover_shadow:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .pdt {
@@ -118,5 +121,110 @@ ul.pdt li {
     font-size: 1.1em;
 }
 
+/*.bg-gray {*/
+/*    background-color: #e3e3e3; !important;*/
+/*}*/
+
+/*.bg-gray:hover {*/
+/*    background-color: #73c473; !important;*/
+/*}*/
+
+/*.bg-gray a {*/
+/*    color: black;*/
+/*}*/
+
+/*.bg-gray:hover a {*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*}*/
+
+.bg-green {
+    background-color: #73c473; !important;
+}
+
+.bg-green a {
+    color: white; !important;
+}
+
+.bg-green:hover a{
+    color: black; !important;
+}
+
+.opacitys {
+    opacity: 0.5;
+    transition-duration: 0.3s;
+}
+
+.opacitys:hover {
+    opacity: 1;
+}
+
+.pstyle p, .pstyle li {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.hover_shadow:hover {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.hover_scale {
+    transition: 0.3s;
+}
+
+.hover_scale:hover {
+    transform: scale(1.3);
+}
+
+.hover_round {
+    transition: 0.3s;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.hover_round:hover {
+    border-radius: 0;
+    opacity: 1;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    position: absolute;
+}
+
+.translateR:hover {
+    transform: scale(1.3) translateX(200px);
+}
+
+.translateL:hover {
+    transform: scale(1.3) translateX(-200px);
+}
+
+@media (max-width: 1200px) {
+    .translateR:hover {
+        transform: scale(1.2);
+    }
+
+    .translateL:hover {
+        transform: scale(1.2);
+    }
+}
+
+.text-indent {
+    padding-left: 2em;
+}
+
+.about_article h3 {
+    margin-bottom: 2em;
+}
+
+.about_article p {
+    font-size: 1.2em;
+}
+
+.about_article li {
+    border: 1px green solid;
+    border-radius: 1em;
+    padding: 5em 2em;
+    margin: 2em 0;
+}
 
 

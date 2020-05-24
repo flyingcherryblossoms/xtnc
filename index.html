@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/tabs.css"/>
     <link rel="stylesheet" type="text/css" href="css/tabstyles.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootnavbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 
     <script src="js/modernizr.custom.js"></script>
     <script src="jquery/jquery-3.5.1.min.js"></script>
@@ -40,9 +40,10 @@
             <div class="col-md-3 col-lg-3 d-flex align-content-md-center justify-content-end">
                 <nav>
                     <ul class="list-unstyled row">
-                        <li><a href="#" class="nav1 text-decoration-none">加入我们</a></li>
-                        <li><a href="#" class="nav1 text-decoration-none">新手引导</a></li>
-                        <li><a href="#" class="nav1 text-decoration-none">个人中心</a></li>
+                        <li><a href="index.html" class="nav1 text-decoration-none">主页</a></li>
+                        <li><a href="join.html" class="nav1 text-decoration-none">加入我们</a></li>
+                        <li><a href="guider.html" class="nav1 text-decoration-none">新手引导</a></li>
+                        <li><a href="personal.html" class="nav1 text-decoration-none">个人中心</a></li>
                     </ul>
                 </nav>
             </div>
@@ -118,7 +119,6 @@
         </div>
         <!--row3 end-->
     </div>
-
 </header>
 <!--header end-->
 
@@ -126,10 +126,14 @@
     <!--首页-->
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
         <main class="container">
-            <div style="height: 50px"></div>
-            <div class="row">
+            <div class="row my-4 mb-4">
                 <div class="col-md-6">
-                    <img src="img/心田农场2.jpg" alt="心田农场" class="img-fluid">
+                    <video class="videoPlayer w-100 border-0" poster="img/banner_big.jpg">
+                        <source src="src/back_video.mp4" type="video/mp4">
+                        <p>Your browser doesn't support HTML5 video. Here is
+                            <img src="img/banner_big.jpg" alt="心田农场" class="img-fluid">
+                        </p>
+                    </video>
                 </div>
                 <div class="col-md-6">
                     <section>
@@ -277,22 +281,20 @@
                 </div>
             </div>
 
-            <div style="height: 30px"></div>
-
             <div class="row">
                 <div class="col-md-4">
                     <figure class="figure">
-                        <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
+                        <img src="img/banner1.jpg" class="figure-img img-fluid rounded" alt="...">
                     </figure>
                 </div>
                 <div class="col-md-4">
                     <figure class="figure">
-                        <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
+                        <img src="img/banner2.jpg" class="figure-img img-fluid rounded" alt="...">
                     </figure>
                 </div>
                 <div class="col-md-4">
                     <figure class="figure">
-                        <img src="img/longmao.png" class="figure-img img-fluid rounded" alt="...">
+                        <img src="img/banner3.jpg" class="figure-img img-fluid rounded" alt="...">
                     </figure>
                 </div>
             </div>
@@ -339,7 +341,7 @@
             </div>
         </div>
         <!--商品陈列-->
-        <div class="container">
+        <div class="container my-4">
             <div style="min-height: 20px;"></div>
             <div class="row bg-white">
                 <div class="col-md-4 row pdt-item ml-0">
@@ -551,7 +553,6 @@
 
                 </ul>
             </div>
-            <div style="min-height: 20px;"></div>
         </div>
     </div>
 
@@ -624,24 +625,28 @@
                         <a class="nav-link" href="#">民宿环境</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             项目介绍
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="nav-item dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown"
+                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown7" role="button"
+                                   data-toggle="dropdown"
                                    aria-haspopup="true" aria-expanded="false">
                                     农户体验
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown7">
                                     <li><a class="dropdown-item" href="#">种植</a></li>
                                     <li><a class="dropdown-item" href="#">采摘</a></li>
-                                    <li></li><a class="dropdown-item" href="#">农业讲堂</a></li>
+                                    <li></li>
+                                    <a class="dropdown-item" href="#">农业讲堂</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown8" role="button" data-toggle="dropdown"
+                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown8" role="button"
+                                   data-toggle="dropdown"
                                    aria-haspopup="true" aria-expanded="false">
                                     休闲娱乐
                                 </a>
@@ -938,8 +943,8 @@
                     </section>
                     <section id="section-linetriangle-3"></section>
                     <section id="section-linetriangle-4"></section>
-                </div><!-- /content -->
-            </div><!-- /tabs -->
+                </div>
+            </div>
         </section>
     </div>
 </div>
@@ -1101,7 +1106,7 @@
 <!--footer end-->
 
 <script src="js/cbpFWTabs.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script>
     (function () {
 
@@ -1132,6 +1137,12 @@
             //animation: false
         });
     })
+    $(".videoPlayer").mouseenter(function(){
+        $(".videoPlayer").attr("controls",'');
+    });
+    $(".videoPlayer").mouseleave(function(){
+        $(".videoPlayer").removeAttr("controls");
+    });
 </script>
 </body>
 
